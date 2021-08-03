@@ -47,7 +47,7 @@ app.get("/final", (req, res) => {
     res.sendFile(path.resolve(__dirname, './acknowledgement.html'))
 });
 
-app.get("/getQues", (req, res) => {
+app.get("/getQues", async(req, res) => {
     console.log(">>>>>>>>>>>>>>>>>>>>>>>>");
     console.log(ques);
     console.log(ques.length);
