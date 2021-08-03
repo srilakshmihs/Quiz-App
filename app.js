@@ -96,7 +96,8 @@ app.post("/me", (req, res) => {
     });
     res.send(result)
 });
+const PORT = process.env.PORT || 3000;
 
-app.listen(8080, (req, res) => {
+app.listen(PORT, (req, res) => {
     console.log(`Server Started at PORT 3000`);
 });
